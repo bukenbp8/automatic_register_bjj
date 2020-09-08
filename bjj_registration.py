@@ -37,7 +37,9 @@ forminput = WebDriverWait(driver, 5).until(
 
 forminput.click()
 forminput.send_keys(yourName)
-forminput.submit()
+
+submit_button = driver.find_element_by_class_name("ant-btn")
+submit_button.click()
 
 modal = driver.find_element_by_class_name("ant-modal-content")
 modal.screenshot('confirm_booking.png')
