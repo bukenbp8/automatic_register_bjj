@@ -38,7 +38,7 @@ forminput = WebDriverWait(driver, 5).until(
 forminput.click()
 forminput.send_keys(yourName)
 
-submit_button = driver.find_element_by_class_name("ant-btn")
+submit_button = driver.find_element_by_class_name("ant-btn-primary")
 submit_button.click()
 
 modal = driver.find_element_by_class_name("ant-modal-content")
